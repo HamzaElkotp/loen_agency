@@ -1,0 +1,139 @@
+/*-----golbal rules-------*/
+* {
+    box-sizing: border-box;
+    -wibkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+:root{
+    --main-color: #0bc7b4;
+    --first-color: #192c3b;
+    --secondary-color: #2c4755;
+    --third-color: #f9f9f9;
+    --main-grid: repeat(auto-fill, minmax(300px, 1fr));
+    --main-padding: 60px
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f0f8fa;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-heading{
+    color: #f1f1f1;
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+}
+
+.special-heading + p{
+    color: #939393;
+    margin-top: -35px;
+    text-align: center;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.up-arrow{
+    margin: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 60;
+}
+
+.up-arrow i{
+    color: var(--secondary-color);
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-52%)
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    box-shadow: inset 0 0 6px var(--secondary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+:root {
+    scrollbar-color: var(--main-color) var(--secondary-color) !important;
+    scrollbar-width: thin !important;
+}
+
+
+
+@media (max-width: 992px) {
+    body{
+        background-image: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .special-heading{
+        font-size: 80px;
+    }
+
+    .special-heading + p{
+        margin-top: -25px;
+    }
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

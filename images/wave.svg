@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 1440" width="320" height="1440">
+	<title>wave-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f8f8f8 } 
+	</style>
+	<path id="Layer" class="shp0" d="M288 1440L32 0L0 0L0 1440L288 1440Z" />
+</svg>

@@ -1,0 +1,34 @@
+.works{
+    padding-top: var(--main-padding , 60px);
+    padding-bottom: var(--main-padding , 60px);
+    background-color: var(--third-color);
+}
+
+.works .works-cont{
+    display: grid;
+    grid-template-columns: var(--main-grid);
+    grid-gap: 40px;
+}
+
+.works .tree{
+    padding: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.works .tree i{
+    font-size: 40px;
+    color: var(--main-color , #0bc7b4)
+}
+
+.works .tree h3{
+    font-weight: 800;
+    margin: 20px 0;
+    font-size: 17.5px;
+    letter-spacing: 0.7px;
+    color: var(--first-color);
+}
+
+.works .tree p{
+    line-height: 1.8;
+}

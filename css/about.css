@@ -1,0 +1,124 @@
+.about{
+    padding-top: var(--main-padding , 60px);
+    padding-bottom: var(--main-padding , 60px);
+}
+
+.about .about-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.about .about-cont .image{
+    position: relative;
+    width: 250px;
+    height: 325px;
+}
+
+.about .about-cont .image::before{
+    content: '';
+    width: 90px;
+    height: 445px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    z-index: -1;
+}
+
+.about .about-cont .image::after{
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 235px;
+    border-left: 80px solid var(--main-color , #0bc7b4);
+    border-bottom: 80px solid var(--main-color, #0bc7b4);
+    z-index: -1;
+    right: -150px;
+}
+
+.about .image img{
+    width: 100%;
+}
+
+.about .text{
+    flex-basis: calc(100% - 590px);
+    margin-right: 30px
+}
+
+.about .text p:first-of-type{
+    font-weight: bold;
+    letter-spacing: 1.4;
+    line-height: 2;
+    color: var(--secondary-color)
+}
+
+.about .text hr{
+    width: 55%;
+    display: inline-block;
+    border-color: var(--main-color, #0bc7b4);
+}
+
+.about .text p:last-of-type{
+    font-weight: 500;
+    letter-spacing: 1.2;
+    line-height: 2;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .about .about-cont{
+        flex-direction: column;
+    }
+
+    .about .about-cont .image{
+        margin: -10px auto 65px;
+    }
+    
+    .about .about-cont .image::after{
+        background-color: var(--main-color , #0bc7b4);
+        width: 250px;
+        height: 325px;
+        border: none;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+    
+    .about .text{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0
+    }
+}
+
+/* Medium */
+@media (max-width: 992px) and (min-width: 769px) { 
+    .about .about-cont .image::after{
+        background-color: var(--main-color , #0bc7b4);
+        width: 250px;
+        height: 250px;
+        border: none;
+        position: absolute;
+        top: -15px;
+        left: -15px;
+    }
+    
+    .about .text{
+        flex-basis: calc(100% - 300px);
+        margin-right: 0px
+    }
+}
+
+@media (max-width: 992px) and (min-width: 69px) { 
+    .about .about-cont .image::before{
+        width: 250px;
+        height: 355px;
+        top: -15px;
+        left: -15px;
+    }
+}

@@ -1,0 +1,26 @@
+.landing{
+    height: calc(100vh - 60px);
+    background: url(../images/l-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.landing .text h1{
+    color: var(--main-color , #0bc7b4);
+    font-size: 55px;
+}
+
+.landing .text p{
+    font-size: 18px;
+    color: var(--secondary-color)
+}
