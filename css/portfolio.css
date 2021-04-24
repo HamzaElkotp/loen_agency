@@ -20,6 +20,10 @@
     border-bottom: 5px solid var(--main-color , #0bc7b4);
 }
 
+.portfolio .cards-cont .cards:nth-child(2){
+    border-bottom: 5px solid var(--secondary-color);
+}
+
 .portfolio .cards img{
     max-width: 100%;
 }
